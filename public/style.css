@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+input, select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+}
+
+/* Hervorhebung für beobachtete Person */
+.watch-highlight {
+  background-color: #444417;
+  border: 1px solid #ffe47a;
+}
+
+/* Buttons – Dark Theme optimiert */
+button {
+  background-color: #333;
+  border: none;
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  color: #f0f0f0;
+}
+
+button:hover {
+  background-color: #444;
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Spezielle Button-Klassen */
+button.remove {
+  background-color: #552222;
+}
+
+button.remove:hover {
+  background-color: #773333;
+}
+
+button.watch {
+  background-color: #1f3a4a;
+}
+
+button.watch:hover {
+  background-color: #2f4d63;
+}
+
+button.unwatch {
+  background-color: #554e1f;
+}
+
+button.unwatch:hover {
+  background-color: #7a6f2e;
+}
+
+.time-info {
+  font-style: italic;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+#queue-list hr {
+  border: none;
+  border-top: 2px dashed #aaa;
+  margin: 12px 0;
+}
+
+#queue-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0;
+}
+
+#queue-list li {
+  padding: 6px 0;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#queue-list button {
+  min-width: 90px;
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time-info {
+  font-size: 0.9em;
+  color: #aaa;
+}

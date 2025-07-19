@@ -1,0 +1,6 @@
+Voraussetzung:
+NodeJS Version 18 oder neuer
+=============================================
+npm init -y
+npm install express socket.io
+node server.js
