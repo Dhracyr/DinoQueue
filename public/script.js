@@ -140,18 +140,15 @@ function clearWatch() {
 
 function playNotification() {
   const audio = document.getElementById('notif-sound');
-  audio.volume = 0.5;
+  const volumeSlider = document.getElementById('volume-slider');
+  audio.volume = volumeSlider.value;
+  volumeSlider.addEventListener('input', () => {
+    audio.volume = volumeSlider.value;
+  });
   audio.play().catch(err => {
-    console.log("Notification couldn't be palyed:", err);
+    console.log("Notification couldn't be played:", err);
   });
 }
-
-/*function handleEnter(event) {
-  if (event.key === 'Enter') {
-    event.preventDefault();
-    addUser();
-  }
-}*/
 
 // Wiederherstellung bei Seitenaufruf
 window.addEventListener('load', () => {
