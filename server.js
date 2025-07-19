@@ -55,6 +55,7 @@ function sendQueue() {
 
       const diffMinutes = (joinDate - now) / (1000 * 60);
       if (diffMinutes <= 15) {
+        user.joinTime = null;
         activeQueue.push(user);
         slotsFilled++;
       }
