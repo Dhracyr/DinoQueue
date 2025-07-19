@@ -64,10 +64,11 @@ function sendQueue() {
   }
 
   // Alle übrigen hinten anhängen (nicht aktiv)
-  const inactiveUsers = queue.filter(u => !activeQueue.includes(u));
+  const waitingQueue = queue.filter(user => !activeQueue.includes(user));
+  const fullQueue = activeQueue.concat(waitingQueue);
 
   io.emit('update', {
-    queue: activeQueue.concat(inactiveUsers),
+    queue: fullQueue,
     maxSlots,
   });
 }
