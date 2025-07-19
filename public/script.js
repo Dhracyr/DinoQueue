@@ -140,6 +140,7 @@ function clearWatch() {
 
 function playNotification() {
   const audio = document.getElementById('notif-sound');
+  audio.volume = 0.5;
   audio.play().catch(err => {
     console.log("Notification couldn't be palyed:", err);
   });
