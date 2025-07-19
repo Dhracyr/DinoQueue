@@ -3,8 +3,6 @@ body {
   max-width: 600px;
   margin: 2rem auto;
   text-align: center;
-  font-size: 16px;
-  padding: 1rem;
   background-color: #1e1e1e;
   color: #f5f5f5;
 }
@@ -49,7 +47,6 @@ button {
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
-  min-width: 90px;
   transition: background-color 0.2s ease, transform 0.1s ease;
   color: #f0f0f0;
 }
@@ -102,7 +99,7 @@ button.unwatch:hover {
 
 #queue-list {
   list-style: none;
-  padding-left: 1rem;
+  padding-left: 0;
   text-align: left;
   margin: 0;
 }
@@ -114,7 +111,7 @@ button.unwatch:hover {
   grid-template-columns: 1fr auto auto auto;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 #queue-list button {
@@ -131,11 +128,4 @@ button.unwatch:hover {
 .time-info {
   font-size: 0.9em;
   color: #aaa;
-}
-
-input, button {
-  font-size: 1rem;
-  padding: 0.5em 1em;
-  margin: 0.25em;
-  border-radius: 8px;
 }
